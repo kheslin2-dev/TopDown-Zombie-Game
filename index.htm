@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Top-Down Zombie Shooter — Simple Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="application" aria-label="Top-down zombie shooter">
+      <div id="game-area">
+        <canvas id="game"></canvas>
+      </div>
+      <aside>
+        <h1>Top-Down Zombie Shooter</h1>
+        <p class="small">Use <strong>WASD</strong> or arrow keys to move. Aim with the mouse and click (or hold) to shoot. Survive waves of zombies!</p>
+
+        <div class="stat"><span>Score</span><span id="score">0</span></div>
+        <div class="stat"><span>Health</span><span id="hp">100</span></div>
+        <div class="stat"><span>Zombies</span><span id="zcount">0</span></div>
+
+        <button id="startBtn">Start / Restart</button>
+
+        <div class="muted">Controls</div>
+        <div class="controls">
+          <div class="kbd">W</div>
+          <div class="kbd">A</div>
+          <div class="kbd">S</div>
+          <div class="kbd">D</div>
+          <div class="kbd">Mouse</div>
+        </div>
+
+        <p class="muted">Tip: try strafing (move sideways while aiming) to kite zombies.</p>
+        <footer>Single-file for your portfolio • Easy to extend</footer>
+      </aside>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

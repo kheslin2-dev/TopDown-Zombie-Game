@@ -1,0 +1,44 @@
+  :root{
+    --bg:#0e1116;
+    --panel:#0b1220;
+    --accent:#e85a4f;
+    --muted:#9aa4b2;
+    --ui:#f7fafc;
+  }
+  html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:var(--bg); color:var(--ui); }
+  .wrap {
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    box-sizing:border-box;
+  }
+  .card {
+    width:1000px;
+    max-width:100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    display:grid;
+    grid-template-columns: 1fr 320px;
+  }
+  canvas { display:block; width:100%; height:640px; background: linear-gradient(180deg,#1b2128 0%, #111417 100%); }
+  aside {
+    padding:16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+    border-left:1px solid rgba(255,255,255,0.03);
+  }
+  h1 { margin:0 0 8px 0; font-size:18px; }
+  p.small { color:var(--muted); margin:0 0 12px 0; font-size:13px; }
+  .stat { display:flex; justify-content:space-between; align-items:center; padding:10px; background:rgba(255,255,255,0.02); border-radius:8px; margin-bottom:8px; font-weight:700; }
+  button { margin-top:8px; width:100%; padding:10px; border-radius:8px; border:none; background:var(--accent); color:#fff; font-weight:700; cursor:pointer; }
+  .muted { color:var(--muted); font-size:13px; margin-top:10px; }
+  .controls { display:flex; gap:6px; margin-top:8px; }
+  .kbd { background:rgba(255,255,255,0.03); padding:6px 10px; border-radius:6px; font-weight:700; }
+  footer{ margin-top:10px; color:var(--muted); font-size:12px; }
+  @media (max-width:900px) {
+    .card { grid-template-columns:1fr; }
+    canvas { height:520px; }
+  }
